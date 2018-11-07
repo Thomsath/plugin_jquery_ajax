@@ -1,4 +1,41 @@
-.gooey {
+/* GENERAL */
+body {
+  font-family: 'helvetica', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  height: 10vh;
+}
+main {
+  height: 90vh;
+}
+h1 {
+  font-size: 4rem;
+}
+/* HELPERS */
+.m-auto {
+  margin: auto;
+}
+.d-flex {
+  display: flex;
+}
+.direction-column {
+  flex-direction: column;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.w-100 {
+  width: 100%;
+}
+.pt-5 {
+  padding-top: 5rem;
+}
+/* LOADER */
+.loader {
   z-index: -10;
   position: absolute;
   top: 50%;
@@ -9,7 +46,7 @@
   background: #fff;
   filter: contrast(20);
 }
-.gooey .dot {
+.loader .dot {
   position: absolute;
   width: 16px;
   height: 16px;
@@ -21,13 +58,13 @@
   transform: translateX(0);
   animation: dot 2.8s infinite;
 }
-.gooey .dots {
+.loader .dots {
   transform: translateX(0);
   margin-top: 12px;
   margin-left: 31px;
   animation: dots 2.8s infinite;
 }
-.gooey .dots span {
+.loader .dots span {
   display: block;
   float: left;
   width: 16px;
@@ -76,8 +113,4 @@
   50% {
     transform: translateX(-31px);
   }
-}
-
-.gooey {
-  display: none;
 }
