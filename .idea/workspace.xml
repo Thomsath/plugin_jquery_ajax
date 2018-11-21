@@ -9,7 +9,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5.html" afterPath="$PROJECT_DIR$/5.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pluginvide.js" afterPath="$PROJECT_DIR$/pluginvide.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajaxPlugin.js" afterPath="$PROJECT_DIR$/ajaxPlugin.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +20,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pluginvide.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pluginvide.js">
+      <file leaf-file-name="ajaxPlugin.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ajaxPlugin.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
               <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
@@ -103,7 +103,7 @@
         <option value="$PROJECT_DIR$/5.html" />
         <option value="$PROJECT_DIR$/4.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/pluginvide.js" />
+        <option value="$PROJECT_DIR$/ajaxPlugin.js" />
       </list>
     </option>
   </component>
@@ -287,7 +287,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pluginvide.js">
+    <entry file="file://$PROJECT_DIR$/ajaxPlugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
