@@ -12,7 +12,7 @@
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    display: "none"
+                    visibility: "hidden"
                 }
             }
 		};
@@ -46,15 +46,17 @@
         }
 
         function showLoader() {
-            $("#loader").css("display", "block");
+            $('body').css("visibility", "hidden");
+            $("#loader").css("visibility", "visible");
         }
 
         function hideLoader() {
-            $("#loader").css("display", "none");
+            $("#loader").css("visibility", "hidden");
+            $('body').not('#loader').css("visibility", "visible");
         }
 
         function showNewContent(newContent, destination) {
-            destination.load(newContent).fadeIn();
+            destination.load(newContent);
             history.pushState(newContent, null);
         }
 		// on renvoie la cible pour permettre le chainage de
