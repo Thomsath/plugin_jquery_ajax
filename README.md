@@ -2,7 +2,7 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ee5c6afc3b3745d286f6c5e41c77ee37)](https://app.codacy.com/app/codacy_alexandre-mace/plugin_jquery_ajax?utm_source=github.com&utm_medium=referral&utm_content=alexandre-mace/plugin_jquery_ajax&utm_campaign=Badge_Grade_Dashboard)
 
-Jquery Plugin with ajax feature, loader transition and history management with history API.
+Jquery Plugin with ajax feature, loader transition and history management using history API.
 ## Installation 
 *   Clone the repository and open it.
 
