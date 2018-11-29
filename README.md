@@ -21,18 +21,18 @@ $().ajaxPlugin({
 ## Configuration
 Here is the default configuration of the plugin
 ```javascript
-			destination: $("body"),
-            ajaxTriggers: $("a"),
-            loader: {
-                url: "https://loading.io/spinners/coffee/index.coffee-cup-drink-loader.gif",
-                style: {
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                    visibility: "hidden"
-                }
-            }
+destination: $("body"),
+ajaxTriggers: $("a"),
+loader: {
+    url: "https://loading.io/spinners/coffee/index.coffee-cup-drink-loader.gif",
+    style: {
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        visibility: "hidden"
+    }
+}
 ```
 Feel free to bypass the default options by giving the plugin brand new options e.g :
 ```javascript
