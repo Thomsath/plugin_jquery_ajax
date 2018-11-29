@@ -61,7 +61,7 @@
             AjaxContent.newContent = $(this).attr("href");
             AjaxContent.destination = parameters.destination;
             AjaxContent.load(function(response, status, xhr) {
-                if ( status == "success" ) {
+                if (status === "success") {
                     Browser.updateHistory(AjaxContent.newContent, "");
                     Browser.sluggedTitle = slugify(removeExtension(AjaxContent.newContent));
                     Browser.updateTitle();
@@ -82,8 +82,9 @@
         });
         window.onpopstate =  function(event) {
             event.preventDefault();
+            lastContent = event.state ? event.state : '/';
             if (event.state) {
-                parameters.destination.load(event.state);
+                parameters.destination.load(lastContent);
             }
         };
 
