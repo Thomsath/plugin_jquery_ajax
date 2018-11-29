@@ -1,4 +1,43 @@
 (function($) {
+    // ENTITIES
+    const Browser = {
+        sluggedTitle: "",
+        updateHistory(newContent, title) {
+            history.pushState(newContent, title);
+        },
+        updateTitle() {
+            document.title = this.sluggedTitle.toUpperCase();
+        }
+    };
+    const Loader = {
+        append(parameters) {
+            $("body").append(`<div id="loader"><img src="${parameters.url}" /></div>`);
+            this.setStyle(parameters.style);
+        },
+        show() {
+            $("#loader").css("visibility", "visible");
+        },
+        hide() {
+            $("#loader").css("visibility", "hidden");
+        },
+        setStyle(style) {
+            $("#loader").css(style);
+        }
+    };
+    const AjaxContent = {
+        newContent: "",
+        destination: "",
+        load(callback = null) {
+            this.destination.load(this.newContent, callback);
+        },
+        show() {
+            $("body").css("visibility", "visible");
+        },
+        hide() {
+            $("body").css("visibility", "hidden");
+        }
+    };
+
 	$.fn.ajaxPlugin = function(options) {
 	    // PARAMETERS
 		const parameters = $.extend({
@@ -50,45 +89,6 @@
 
 		return this;
 	};
-
-    // ENTITIES
-    const Browser = {
-        sluggedTitle: "",
-        updateHistory: function (newContent, title) {
-            history.pushState(newContent, title);
-        },
-        updateTitle: function () {
-            document.title = this.sluggedTitle.toUpperCase();
-        }
-    };
-	const Loader = {
-	    append: function (parameters) {
-            $("body").append(`<div id="loader"><img src="${parameters.url}" /></div>`);
-            this.setStyle(parameters.style);
-        },
-        show: function () {
-            $("#loader").css("visibility", "visible");
-        },
-        hide: function () {
-            $("#loader").css("visibility", "hidden");
-        },
-        setStyle: function (style) {
-            $("#loader").css(style);
-        }
-    };
-    const AjaxContent = {
-        newContent: "",
-        destination: "",
-        load: function (callback = null) {
-            this.destination.load(this.newContent, callback);
-        },
-	    show: function () {
-            $("body").css("visibility", "visible");
-        },
-        hide: function () {
-            $("body").css("visibility", "hidden");
-        }
-    };
 
     // SERVICES
     function slugify(text)
